@@ -1,6 +1,12 @@
 import media
 import fresh_tomatoes
 
+# Create Movie Objects
+# Create a new Movie object for each movie that will be included in the website
+# Each movie requires Title, Description Text, Poster Image URL, and YouTube URL
+# 	Ex: new_movie_1 = media.Movie("Title","Description Text", "http://poster.url/poster.jpg","https://youtu.be/eb1vcaqAivY")
+
+ 
 usual_suspects = media.Movie("The Usual Suspects",
 						"A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which begin when five criminals meet at a seemingly random police lineup.",
 						"http://i.ytimg.com/vi/tjwXBkooYaI/movieposter.jpg?v=50fcf849",
@@ -31,6 +37,7 @@ neverending_story = media.Movie("The NeverEnding Story",
 						"https://s3.amazonaws.com/uploads.uservoice.com/assets/072/947/833/original/neverending2.jpg?AWSAccessKeyId=14D6VH0N6B73PJ6VE382&Expires=1489311567&Signature=P%2FJd3OEBOSZeyhyS2K0GqpSFzR4%3D",
 						"https://www.youtube.com/watch?v=UeFni9dOv7c")
 
+# List that contains each movie object to be included in the webpage
 movies = [usual_suspects,
 			boiler_room,
 			lego_movie,
@@ -39,5 +46,5 @@ movies = [usual_suspects,
 			top_secret
 			]
 
-
+# Pass the movies list to the open_movies_page to begin generating the webpage
 fresh_tomatoes.open_movies_page(movies)
